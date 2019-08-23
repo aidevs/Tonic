@@ -1,0 +1,35 @@
+//
+//  BarberApp-Prefix.pch
+//  BarberApp
+//
+//  Created by Pankaj Asudani on 03/03/16.
+//  Copyright © 2016 Deepesh. All rights reserved.
+//
+
+#ifndef BarberApp_Prefix_pch
+#define BarberApp_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "NSObject+PE.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import "CommonFunctions.h"
+#import "AppDelegate.h"
+#import "Config.h"
+#import "MBProgressHUD.h"
+#import "Validate.h"
+#import "HTTPService.h"
+#import "All Macros.h"
+
+#endif
+
+// base URL for all HTTP communication
+//#define BASE_URL @"http://mymeetingdesk.com/php1/tonic/api/"
+#define BASE_URL @"http://tonicapp.us/api/"
+
+#define USER_INFO @"UserInfo"
+#define USER_EMAIL @"User_Email"
+#define USER_PASSWORD @"User_Password"
+
+#define REFRESH_WALKINS @"Refresh_Walkins"

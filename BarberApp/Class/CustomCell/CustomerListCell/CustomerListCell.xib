@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BEBAS__0.TTF">
+            <string>Bebas</string>
+        </array>
+        <array key="SF_Burlington_Script.ttf">
+            <string>SFBurlingtonScript</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomerListCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-fT-4vc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9f-hN-Gte">
+                                <rect key="frame" x="75" y="30" width="301" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="HPa-Qs-mdk"/>
+                                    <constraint firstAttribute="height" constant="30" id="oEK-oj-ciQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYj-bf-fNT">
+                                <rect key="frame" x="15" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SHh-Jl-wbp"/>
+                                    <constraint firstAttribute="height" constant="40" id="xHt-Qp-lT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFBurlingtonScript" family="SF Burlington Script" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="men_icon_ipad" translatesAutoresizingMaskIntoConstraints="NO" id="P6o-ml-4dw">
+                                <rect key="frame" x="500" y="6.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="C52-UN-DZi"/>
+                                    <constraint firstAttribute="width" constant="75" id="SmU-t7-RL1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P6o-ml-4dw" secondAttribute="trailing" constant="25" id="8Us-fZ-Fck"/>
+                            <constraint firstItem="X9f-hN-Gte" firstAttribute="leading" secondItem="DYj-bf-fNT" secondAttribute="trailing" constant="20" id="A4Q-C9-glM"/>
+                            <constraint firstItem="DYj-bf-fNT" firstAttribute="centerY" secondItem="kgR-fT-4vc" secondAttribute="centerY" constant="3" id="AeZ-ep-4YX"/>
+                            <constraint firstItem="DYj-bf-fNT" firstAttribute="leading" secondItem="kgR-fT-4vc" secondAttribute="leading" constant="15" id="Ix5-Mu-cRL"/>
+                            <constraint firstItem="X9f-hN-Gte" firstAttribute="centerY" secondItem="kgR-fT-4vc" secondAttribute="centerY" id="SuH-Ny-CyM"/>
+                            <constraint firstItem="P6o-ml-4dw" firstAttribute="centerY" secondItem="kgR-fT-4vc" secondAttribute="centerY" id="a9O-vx-LZ8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kgR-fT-4vc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Dz-tU-iaf"/>
+                    <constraint firstAttribute="bottom" secondItem="kgR-fT-4vc" secondAttribute="bottom" id="UWJ-1a-M2t"/>
+                    <constraint firstAttribute="trailing" secondItem="kgR-fT-4vc" secondAttribute="trailing" id="Yuy-Wg-QoP"/>
+                    <constraint firstItem="kgR-fT-4vc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h5e-uh-md8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="barberImage1" destination="P6o-ml-4dw" id="we2-zw-fFf"/>
+                <outlet property="labelCount" destination="DYj-bf-fNT" id="gjB-be-dxN"/>
+                <outlet property="labelCustomerName" destination="X9f-hN-Gte" id="EyC-9P-Brk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="men_icon_ipad" width="16" height="16"/>
+    </resources>
+</document>

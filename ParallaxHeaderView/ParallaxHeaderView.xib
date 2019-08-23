@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BEBAS__0.TTF">
+            <string>Bebas</string>
+            <string>Bebas</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParallaxHeaderView">
+            <connections>
+                <outlet property="headrScrollView" destination="DHW-0R-aVY" id="KJb-bh-4Ff"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="vtT-9j-vtx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="580"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHW-0R-aVY">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="580"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU9-Xx-GkM">
+                            <rect key="frame" x="32" y="405" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbg-w5-3zz">
+                            <rect key="frame" x="119" y="164" width="562" height="312"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQR-JF-3Z0">
+                                    <rect key="frame" x="67" y="89" width="428" height="52"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="Scn-vH-fQk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="19"/>
+                                    <state key="normal" title="check-in" backgroundImage="loginButton"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMl-Td-FWx">
+                                    <rect key="frame" x="67" y="171" width="428" height="52"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="9YY-bW-qZd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="19"/>
+                                    <state key="normal" title="claim reservation" backgroundImage="claimButton"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.70002216309999998" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="YQR-JF-3Z0" secondAttribute="trailing" constant="67" id="LdJ-P7-YWI"/>
+                                <constraint firstItem="YQR-JF-3Z0" firstAttribute="leading" secondItem="Dbg-w5-3zz" secondAttribute="leading" constant="67" id="S9l-2v-NdR"/>
+                                <constraint firstAttribute="height" constant="312" id="TAB-sb-ceS">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="312"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="562" id="f1R-As-0z3"/>
+                                <constraint firstItem="WMl-Td-FWx" firstAttribute="leading" secondItem="Dbg-w5-3zz" secondAttribute="leading" constant="67" id="nHK-Ai-C88"/>
+                                <constraint firstItem="WMl-Td-FWx" firstAttribute="top" secondItem="YQR-JF-3Z0" secondAttribute="bottom" constant="30" id="sN1-ib-Vjw"/>
+                                <constraint firstItem="YQR-JF-3Z0" firstAttribute="top" secondItem="Dbg-w5-3zz" secondAttribute="top" constant="89" id="tmx-Ic-sOh"/>
+                                <constraint firstAttribute="trailing" secondItem="WMl-Td-FWx" secondAttribute="trailing" constant="67" id="zVt-NM-AQu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZU9-Xx-GkM" firstAttribute="top" secondItem="DHW-0R-aVY" secondAttribute="top" constant="405" id="2PY-xc-fyL"/>
+                        <constraint firstAttribute="bottom" secondItem="ZU9-Xx-GkM" secondAttribute="bottom" constant="154" id="SiZ-lv-8cM"/>
+                        <constraint firstItem="Dbg-w5-3zz" firstAttribute="centerY" secondItem="DHW-0R-aVY" secondAttribute="centerY" constant="30" id="YNE-ez-DQ0"/>
+                        <constraint firstAttribute="trailing" secondItem="ZU9-Xx-GkM" secondAttribute="trailing" constant="726" id="lkU-Ud-Qik"/>
+                        <constraint firstItem="Dbg-w5-3zz" firstAttribute="centerX" secondItem="DHW-0R-aVY" secondAttribute="centerX" id="zfe-8H-6f6"/>
+                        <constraint firstItem="ZU9-Xx-GkM" firstAttribute="leading" secondItem="DHW-0R-aVY" secondAttribute="leading" constant="32" id="zxv-3d-hfd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="afQ-tu-UeE"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DHW-0R-aVY" secondAttribute="bottom" id="5Hj-ey-V3D"/>
+                <constraint firstAttribute="trailing" secondItem="DHW-0R-aVY" secondAttribute="trailing" id="Im4-9Y-g2R"/>
+                <constraint firstItem="DHW-0R-aVY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TVl-rK-tWf"/>
+                <constraint firstItem="DHW-0R-aVY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z4I-Fi-aUZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="508" y="331"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="claimButton" width="320" height="103"/>
+        <image name="loginButton" width="320" height="103"/>
+    </resources>
+</document>

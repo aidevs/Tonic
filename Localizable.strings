@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  BarberApp
+
+  Created by Pankaj Asudani on 04/03/16.
+  Copyright © 2016 Deepesh. All rights reserved.
+*/
+
+
+"EMAIL_BLANK"       = "Please enter a email.";
+"EMAIL_INVALID"     = "Please enter a valid email.";
+"PASSWORD_BLANK"    = "Please enter a password.";
+"NETWORK_LOST"      = "Please check your internet connectivity.";
